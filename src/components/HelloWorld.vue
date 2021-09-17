@@ -6,6 +6,7 @@
     <label>a</label>
     <input type="radio" key="b" value="b" v-model="radio">
     <label>b</label>
+    <router-link to="/transition">transition</router-link>
     <!-- <h2 v-bind:title='message'>Essential Links</h2>
     <ul>
       <li>

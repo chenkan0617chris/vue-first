@@ -21,14 +21,21 @@
           </transition-group>
           <button @click="shuffle">shuffle</button>
         </div>
+        <div>
+          <input v-model="number" type="number">
+          <p>{{showNumber}}</p>
+        </div>
     </div>
 </template>
 
 <script>
 import _ from 'underscore'
+import gsap from 'gsap'
 export default {
   data () {
     return {
+      number: 0,
+      newNumber: 0,
       list: [1, 2, 3, 4, 5, 6, 7, 8, 9],
       items: Array.apply(null, {length: 81}).map(function (_, index) {
         return {
@@ -54,6 +61,16 @@ export default {
     },
     shuffle: function () {
       this.items = _.shuffle(this.items)
+    }
+  },
+  computed: {
+    showNumber: function () {
+      return this.newNumber.toFixed(0)
+    }
+  },
+  watch: {
+    number: function (newValue) {
+      gsap.to(this.$data, {duration: 0.5, newNumber: newValue})
     }
   }
 }

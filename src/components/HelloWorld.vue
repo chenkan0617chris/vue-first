@@ -8,7 +8,7 @@
     <label>b</label>
     <router-link to="/transition">transition</router-link>
     <el-row>
-      <el-button>默认按钮1</el-button>
+      <el-button>默认按钮</el-button>
     </el-row>
     <!-- <h2 v-bind:title='message'>Essential Links</h2>
     <ul>

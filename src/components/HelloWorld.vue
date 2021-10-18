@@ -6,9 +6,9 @@
     <label>a</label>
     <input type="radio" key="b" value="b" v-model="radio">
     <label>b</label>
-    <router-link to="/transition">transition</router-link>
+    <router-link to="/transition">transition12</router-link>
     <el-row>
-      <el-button>默认按钮</el-button>
+      <el-button>默认按钮123</el-button>
     </el-row>
     <!-- <h2 v-bind:title='message'>Essential Links</h2>
     <ul>

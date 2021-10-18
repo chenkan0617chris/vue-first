@@ -7,6 +7,7 @@ import List from '@/components/List'
 import CheckBox from '@/components/Checkbox.component'
 import ToggleButton from '@/components/ToggleButton'
 import Transition from '@/components/Transition'
+import Layout from '@/components/Layout'
 Vue.use(Router)
 
 export default new Router({
@@ -42,6 +43,10 @@ export default new Router({
     {
       path: '/transition',
       component: Transition
+    },
+    {
+      path: '/layout',
+      component: Layout
     }
   ]
 })
